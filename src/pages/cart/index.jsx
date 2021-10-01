@@ -18,6 +18,7 @@ const Cart = () => {
     <>
       <div className="cartBag">
         <h2>Resumo do Pedido</h2>
+        <h3>{`${cart.length} produtos`}</h3>
         <h3>R$:{totalPrice}</h3>
         <button onClick={handle}>Finalizar compra</button>
       </div>

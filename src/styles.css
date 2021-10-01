@@ -9,7 +9,7 @@ body {
   height: 60vh;
   border-radius: 25px;
   background-color: #fca311;
-  background-image: url("./wallpaper\ \(1\).png");
+  background-image: url("./assets/wallpaper\ \(3\).png");
   background-size: auto;
 }
 .headerCart {
@@ -35,16 +35,18 @@ body {
 }
 .header button {
   margin-top: 2vh;
-  background-image: url("./silhueta-cheia-de-sacola-de-compras.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
-  background-repeat: no-repeat;
   width: 40px;
-  background-size: contain;
-  background-color: #fca311;
-  border: 0;
+  background: unset;
   cursor: pointer;
-  color: white;
-  border-radius: 15px;
+  border: 0;
+}
+.header img {
+  width: 40px;
+  height: 40px;
 }
 .header a {
   color: white;

@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import Product from "../product";
 
@@ -17,9 +16,6 @@ const Cart = () => {
   };
   return (
     <>
-      {/* <div className = 'goBack'>
-        <Link to="/">Voltar</Link>
-      </div> */}
       <div className="cartBag">
         <h2>Resumo do Pedido</h2>
         <h3>R$:{totalPrice}</h3>

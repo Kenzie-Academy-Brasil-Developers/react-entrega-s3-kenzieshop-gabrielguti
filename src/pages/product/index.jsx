@@ -1,5 +1,9 @@
 import { useDispatch } from "react-redux";
-import { removeFromCart, addToCart } from "../../store/modules/cart/actions";
+import {
+  addToCartThunk,
+  removeFromCartThunk,
+} from "../../store/modules/cart/thunk";
+
 const Product = ({ product, control = false }) => {
   const dispatch = useDispatch();
 
@@ -15,14 +19,14 @@ const Product = ({ product, control = false }) => {
       {control ? (
         <button
           className="removeItem"
-          onClick={() => dispatch(removeFromCart(id))}
+          onClick={() => dispatch(removeFromCartThunk(id))}
         >
           Remover
         </button>
       ) : (
         <button
           className="addItem"
-          onClick={() => dispatch(addToCart(product))}
+          onClick={() => dispatch(addToCartThunk(product))}
         >
           Adicionar no carrinho
         </button>

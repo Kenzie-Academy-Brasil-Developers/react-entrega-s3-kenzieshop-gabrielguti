@@ -62,7 +62,7 @@ const inicialState = [
   {
     id: 11,
     img: "https://vivaquiro.com.br/wp-content/uploads/2020/04/Brac-Longo.jpg",
-    name: "Manguito TM7 Võlei",
+    name: "Manguito TM7 Vôlei",
     price: 80,
   },
   {

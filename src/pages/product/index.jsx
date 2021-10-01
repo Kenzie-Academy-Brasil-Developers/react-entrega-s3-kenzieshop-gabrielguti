@@ -1,6 +1,5 @@
 import { useDispatch } from "react-redux";
 import { removeFromCart, addToCart } from "../../store/modules/cart/actions";
-
 const Product = ({ product, control = false }) => {
   const dispatch = useDispatch();
 
@@ -12,7 +11,7 @@ const Product = ({ product, control = false }) => {
     <div className="productBox">
       <img src={img} alt="itemImg" />
       <p>{name}</p>
-      <p className = 'price'>{`R$ ${price}`}</p>
+      <p className="price">{`R$ ${price}`}</p>
       {control ? (
         <button
           className="removeItem"
